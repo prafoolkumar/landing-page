@@ -1,0 +1,158 @@
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px; /* Increased padding for better spacing */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.navbar a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+.navbar a.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar li:not(.logo) {
+    position: relative; /* Positioning for dropdown */
+}
+
+.navbar li.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.dropdown-content a:hover {
+    background-color: #555; /* Darker background color on hover */
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.hotel {
+    margin: 10px;
+    text-align: center;
+    max-width: 300px;
+}
+.middle img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hotel-description {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.hotel-description h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+.hotel-description p {
+    margin: 0;
+}
+.city-booking {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+.city-booking h2 {
+    margin-bottom: 20px;
+}
+.city-booking button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.city-booking button:hover {
+    background-color: #45a049;
+}
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.footer-section {
+    margin: 10px;
+    min-width: 150px;
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+}
+.footer-section p {
+    margin: 5px 0;
+}
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+}
+.footer-section a:hover {
+    color: #fff;
+}
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
